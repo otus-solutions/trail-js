@@ -1,0 +1,49 @@
+  .ns-popover-tooltip-theme .ns-popover-tooltip {
+    box-sizing: border-box;
+    border: solid 1px #d2d2d2;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 0.5625rem 0.875rem;
+    max-width: 20rem;
+    font-size: 0.875rem;
+    -webkit-box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    border-radius: 10px;
+    text-align: justify;
+
+  }
+
+  .ns-popover-tooltip-theme.ns-popover-right-placement .triangle {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 11px;
+    border-color: transparent;
+    position: absolute;
+    border-right-color: #d2d2d2;
+    top: 50%;
+    left: -11px;
+    margin-top: -11px; }
+    /* line 57, ../sass/ns-popover.scss */
+    .ns-popover-tooltip-theme.ns-popover-right-placement .triangle:after {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      border: solid 10px;
+      border-color: transparent;
+      position: absolute; }
+    /* line 115, ../sass/ns-popover.scss */
+    .ns-popover-tooltip-theme.ns-popover-right-placement .triangle:after {
+      border-right-color: #fff;
+      border-left-width: 0;
+      left: 1px;
+      bottom: -10px; }
+  /* line 181, ../sass/ns-popover.scss */
+
+  .ns-popover-tooltip-theme.ns-popover-right-align .ns-popover-tooltip {
+    margin-right: 0; }
+  /* line 199, ../sass/ns-popover.scss */

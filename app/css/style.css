@@ -1,0 +1,73 @@
+/*####### SELETORES ######################*/
+body {
+    font-size: 100%;
+    font-family: "Droid Serif", serif;
+    color: #7f8c97;
+    /*background-color: #e9f0f5;*/
+}
+
+h1, h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/*########## ID'S #######################*/
+
+#layoutContainer {
+    /*caixa em volta dos itens*/
+    margin-left: 50px;
+    /*border: 1px solid black;*/
+    /*move para direita a trilha*/
+}
+
+#iconSubway {
+    margin-left: 50px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 18px;
+    box-shadow: 0px 0px 0px 7px #e1e3f3;
+}
+
+/*######### CLASSES ######################*/
+
+.md-fab.md-mini.step-ball:hover {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+}
+
+
+.timeLine::before {
+    /* Config da linha vertical */
+    display: flex;
+    content: '';
+    height: 80px;
+    width: 8px;
+    margin-left: 24px;
+    background-color: #e1e3f3;
+    margin-top: -30%;
+    margin-bottom: -30%;
+
+}
+.md-title{
+  /*posicao do conteudo do stepBall*/
+  margin-left: 80px;
+  margin-top: -50px;
+
+}
+
+.ns-popover-tooltip{
+    border-radius: 10px;
+    text-align: justify;
+
+}
+
+.btDiv {
+    /*Menu de botoes para teste*/
+    display: flex;
+    margin-top: 20px;
+    margin-right: 1200px;
+    margin-bottom: 30px;
+    float: right;
+}

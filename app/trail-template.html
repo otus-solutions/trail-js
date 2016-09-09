@@ -1,0 +1,24 @@
+<md-button id="iconSubway" class="md-fab md-primary md-hue-2">
+    <md-icon >directions_subway</md-icon>
+</md-button>
+
+<div id="layoutContainer" style="width:100px" ng-repeat="content in nodes">
+    <section flex class="timeLine"></section>
+    <div layout="row" layout-align="left center">
+        <div id="stepButtons">
+            <md-button ng-click="content.click(content)" ns-popover ns-popover-template="tooltip" ns-popover-trigger="mouseover"
+                ns-popover-theme="ns-popover-tooltip-theme" ns-popover-timeout="0.2"
+                ns-popover-placement="right" ng-class="content.styleClass" class=" md-hue-2 md-fab md-mini">
+                <md-icon>{{content.icon}}</md-icon>
+            </md-button>
+        </div>
+        <div>
+            <span>{{content.time}}</span>
+        </div>
+    </div>
+
+    <script type="text/ng-template" id="tooltip">
+          <div class="triangle"></div>
+          <div class="ns-popover-tooltip">{{content.text+i}}</div>
+    </script>
+</div>

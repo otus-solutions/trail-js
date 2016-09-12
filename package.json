@@ -25,14 +25,9 @@
         "build": "gulp compress",
         "start": "npm run gulp browser-sync"
     },
-    "dependencies": {
-        "angular": "^1.4.7",
-        "gulp-concat": "2.6.0",
-        "gulp-minify": "0.0.11",
-        "angular-material": "1.0.5",
-        "ns-popover" : "0.6.8"
-    },
     "devDependencies": {
+        "gulp-if": "^2.0.1",
+        "gulp-minify-css": "^1.2.4",
         "gulp-sonar": "2.1.0",
         "gulp-concat": "2.6.0",
         "gulp-minify": "0.0.11",

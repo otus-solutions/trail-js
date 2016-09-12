@@ -6,6 +6,8 @@
     var minify = require('gulp-minify');
     var concat = require('gulp-concat');
     var sonar = require('gulp-sonar');
+    var minifyCss = require('gulp-minify-css');
+    var gulpif = require('gulp-if');
     var packageJson = require('./package.json');
 
     gulp.task('upgrade-version', function(value) {
@@ -17,11 +19,15 @@
     });
 
     gulp.task('compress', function() {
-        gulp.src('app/**/*.js')
+        gulp.src(['app/**/*.js'])
             .pipe(concat('trail.js'))
             .pipe(minify({
                 'mangle': false
             }))
+            .pipe(gulpif('*.js', uglify()))
+            .pipe(gulp.dest('dist'));
+        gulp.src(['app/css/*.css'])
+            .pipe(gulpif('*.css', minifyCss()))
             .pipe(gulp.dest('dist'));
     });
 

@@ -2,7 +2,7 @@
 Ferramenta para apresentação de trilha de elementos.
 <br>
 
-<img align="left" height="1000" src="https://googledrive.com/host/0B02ojmjf13KVRkhJWkNxcVA2eXM/trail.png">
+<img align="left" height="1000" src="https://raw.githubusercontent.com/wiki/ccem-dev/trail-js/images/trail.png">
 
 ## Utilização
 Dependencias:

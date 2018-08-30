@@ -2,10 +2,10 @@ angular
     .module('trail')
     .directive('otusTrail', function() {
         return {
-            template:  
+            template:
 		'<div layout-align="center center" layout="column">'+
 		'<md-button class="md-fab md-primary">'+
-		'<md-icon >directions_subway</md-icon>'+
+		'<md-icon >question_answer</md-icon>'+
 		'</md-button>'+
 		'<div layout-align="center" ng-repeat="content in nodes">'+
 		'<section flex class="timeLine"></section>'+

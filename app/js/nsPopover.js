@@ -39,6 +39,50 @@
     };
   });
 
+  module.controller('clientCtrl', function(){
+    var self = this;
+    self.tracks = [{
+            id: "TST1",
+            icon: "date_range",
+            text: "TST1",
+            time: "",
+            styleClass: "md-warn",
+            click: function callback(){alert('Hello World')}
+
+        }, {
+            id: "",
+            icon: "looks_one",
+            text: "Segundo nodo da lista",
+            time: "",
+            styleClass: "md-warn",
+            click: function(){self.add()}
+        }, {
+            id: "",
+            icon: "exposure_zero",
+            text: "Terceira opção",
+            time: "",
+            styleClass: "md-warn"
+        }, {
+            id: "",
+            icon: "radio_button_checked",
+            text: "Ultima.",
+            time: "",
+            styleClass: "md-warn"
+        }];
+
+    self.add = function(){
+      var dados = {
+          id: "",
+          icon: "looks_one",
+          text: "Segundo nodo da lista",
+          time: "",
+          styleClass: "md-warn",
+          click: function(){console.log('oi')}
+      };
+      self.tracks.push(dados);
+    }
+  });
+
   module.directive('nsPopover', ['nsPopover','$rootScope','$timeout','$templateCache','$q','$http','$compile','$document','$parse',
     function(nsPopover, $rootScope, $timeout, $templateCache, $q, $http, $compile, $document, $parse) {
       return {

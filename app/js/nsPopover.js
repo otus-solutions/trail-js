@@ -47,7 +47,7 @@
             text: "TST1",
             time: "",
             styleClass: "md-warn",
-            click: function callback(){alert('Hello World')}
+            click: function callback(){}
 
         }, {
             id: "",

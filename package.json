@@ -26,8 +26,8 @@
         "start": "npm run gulp browser-sync"
     },
     "dependencies": {
-        "angular": "1.5.8",
-        "angular-material": "1.0.9"
+        "angular": "1.4.7",
+        "angular-material": "1.0.5"
     },
     "devDependencies": {
         "gulp-if": "^2.0.1",

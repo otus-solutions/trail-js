@@ -1,5 +1,3 @@
-(function() {
-
 angular
     .module('trail')
     .directive('otusTrail', function() {
@@ -35,5 +33,3 @@ angular
             }
         };
     });
-
-  })()
